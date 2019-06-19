@@ -1,0 +1,128 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.baby {
+  margin: 30px;
+  position: relative;
+  cursor: pointer;
+  float: left;
+
+  &_head {
+    @include head(100px, $brown-light);
+
+      // ears
+      &::before,
+      &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: darken($brown-light,10);
+        top: 30%;
+        z-index: -1;
+        /* transform: translate(-50%,-50%); */
+      }
+
+      &::before {
+        left: -15px;
+      }
+
+      &::after {
+        right: -15px;
+      }
+  }
+
+  &_mouth {
+    width: 70%;
+    height: 40%;
+    background-color: $bardo;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    border-radius: 5px 5px 20px 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+    }
+
+    // teeth
+    &::before {
+      width: 30%;
+      height: 40%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $white 50%);
+      left: 35%;
+      top: -20%;
+      border-radius: 0 0 50% 50% ;
+    }
+
+    // tongue
+    &::after {
+      /* width: 40px;
+      height: 40px; */
+      width: 60%;
+      height: 80%;
+      // background-color: $red;
+      background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, $red 50%);
+      left: 20%;
+      bottom: -40%;
+      border-radius: 50% 50% 0 0;
+      /* left: 20%;
+      bottom: -40%;
+      border-radius: 50%; */
+      /* border-bottom: 20px solid #fb003c;
+      border-left: 20px solid #fb003c; */
+      // clip-path: polygon(25% 0 25% 25% 50%);
+    }
+
+    &__speak {
+      width: 70%;
+      height: 3%;
+      background-color: $bardo;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      border-radius: 30%;
+    }
+  }
+
+  &_nose {
+    width: 11px;
+    height: 13px;
+    background-color: darken($brown-light,15);
+    position: absolute;
+    top: 28%;
+    left: 45%;
+    border-radius: 40%;
+
+    // eyes
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: darken($brown-light,40);
+      width: 8px;
+      height: 14px;
+      top: -5px;
+      z-index: 4;
+      border-radius: 40%;
+    }
+
+    &::before {
+      left: -13px;
+    }
+
+    &::after {
+      right: -13px;
+    }
+  }
+}

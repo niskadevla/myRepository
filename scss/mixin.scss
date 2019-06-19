@@ -1,0 +1,7 @@
+@mixin head($width, $bgColor) {
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+  background-color: $bgColor;
+  position: relative;
+}

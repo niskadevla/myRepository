@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.baby {
+  margin: 30px;
+  position: relative;
+  cursor: pointer;
+  float: left;
+}
+
+.baby_head {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #dbad6f;
+  position: relative;
+}
+
+.baby_head::before, .baby_head::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #d19646;
+  top: 30%;
+  z-index: -1;
+  /* transform: translate(-50%,-50%); */
+}
+
+.baby_head::before {
+  left: -15px;
+}
+
+.baby_head::after {
+  right: -15px;
+}
+
+.baby_mouth {
+  width: 70%;
+  height: 40%;
+  background-color: #c7202f;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  border-radius: 5px 5px 20px 20px;
+}
+
+.baby_mouth::before, .baby_mouth::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+}
+
+.baby_mouth::before {
+  width: 30%;
+  height: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #fff));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #fff 50%);
+  left: 35%;
+  top: -20%;
+  border-radius: 0 0 50% 50%;
+}
+
+.baby_mouth::after {
+  /* width: 40px;
+      height: 40px; */
+  width: 60%;
+  height: 80%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #f01327));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, #f01327 50%);
+  left: 20%;
+  bottom: -40%;
+  border-radius: 50% 50% 0 0;
+  /* left: 20%;
+      bottom: -40%;
+      border-radius: 50%; */
+  /* border-bottom: 20px solid #fb003c;
+      border-left: 20px solid #fb003c; */
+}
+
+.baby_mouth__speak {
+  width: 70%;
+  height: 3%;
+  background-color: #c7202f;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  border-radius: 30%;
+}
+
+.baby_nose {
+  width: 11px;
+  height: 13px;
+  background-color: #cb8a33;
+  position: absolute;
+  top: 28%;
+  left: 45%;
+  border-radius: 40%;
+}
+
+.baby_nose::before, .baby_nose::after {
+  content: "";
+  position: absolute;
+  background-color: #654519;
+  width: 8px;
+  height: 14px;
+  top: -5px;
+  z-index: 4;
+  border-radius: 40%;
+}
+
+.baby_nose::before {
+  left: -13px;
+}
+
+.baby_nose::after {
+  right: -13px;
+}
