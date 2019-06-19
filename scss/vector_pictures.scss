@@ -20,8 +20,8 @@
       &::before,
       &::after {
         content: "";
-        width: 30px;
-        height: 30px;
+        width: 30%;
+        height: 30%;
         position: absolute;
         border-radius: 50%;
         background-color: darken($brown-light,10);
@@ -31,11 +31,11 @@
       }
 
       &::before {
-        left: -15px;
+        left: -15%;
       }
 
       &::after {
-        right: -15px;
+        right: -15%;
       }
   }
 

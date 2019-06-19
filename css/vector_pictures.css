@@ -20,8 +20,8 @@
 
 .baby_head::before, .baby_head::after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 30%;
+  height: 30%;
   position: absolute;
   border-radius: 50%;
   background-color: #d19646;
@@ -31,11 +31,11 @@
 }
 
 .baby_head::before {
-  left: -15px;
+  left: -15%;
 }
 
 .baby_head::after {
-  right: -15px;
+  right: -15%;
 }
 
 .baby_mouth {
