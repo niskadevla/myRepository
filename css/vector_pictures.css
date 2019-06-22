@@ -4,7 +4,7 @@
 }
 
 .baby {
-  margin: 30px;
+  margin: 20px 50px;
   position: relative;
   cursor: pointer;
   float: left;
@@ -24,10 +24,10 @@
   height: 30%;
   position: absolute;
   border-radius: 50%;
+  z-index: -1;
   background-color: #d19646;
   top: 30%;
   z-index: -1;
-  /* transform: translate(-50%,-50%); */
 }
 
 .baby_head::before {
@@ -39,12 +39,12 @@
 }
 
 .baby_mouth {
-  width: 70%;
-  height: 40%;
+  width: 65%;
+  height: 35%;
   background-color: #c7202f;
   position: absolute;
-  top: 50%;
-  left: 15%;
+  top: 52.5%;
+  left: 17.5%;
   border-radius: 5px 5px 20px 20px;
 }
 
@@ -67,12 +67,12 @@
 .baby_mouth::after {
   /* width: 40px;
       height: 40px; */
-  width: 60%;
+  width: 55%;
   height: 80%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #f01327));
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, #f01327 50%);
-  left: 20%;
-  bottom: -40%;
+  left: 22.5%;
+  bottom: -37.5%;
   border-radius: 50% 50% 0 0;
   /* left: 20%;
       bottom: -40%;
@@ -118,4 +118,154 @@
 
 .baby_nose::after {
   right: -13px;
+}
+
+.newborn {
+  margin: 20px 50px;
+  position: relative;
+  cursor: pointer;
+  float: left;
+}
+
+.newborn_head {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #dbad6f;
+  position: relative;
+  -webkit-transform: rotateZ(25deg);
+  transform: rotateZ(25deg);
+}
+
+.newborn_head::before, .newborn_head::after {
+  content: "";
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #d19646;
+  top: 30%;
+}
+
+.newborn_head::before {
+  left: -15%;
+}
+
+.newborn_head::after {
+  right: -15%;
+}
+
+.newborn_body {
+  width: 63px;
+  height: 126px;
+  background-color: #007dff;
+  border-radius: 70px;
+  -webkit-transform: rotateZ(60deg);
+  transform: rotateZ(60deg);
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: -25.92593px;
+}
+
+.newborn_mouth {
+  width: 65%;
+  height: 35%;
+  background-color: #c7202f;
+  position: absolute;
+  top: 52.5%;
+  left: 17.5%;
+  border-radius: 5px 5px 15px 15px;
+}
+
+.newborn_mouth::before, .newborn_mouth::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+}
+
+.newborn_mouth::before {
+  width: 30%;
+  height: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #fff));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #fff 50%);
+  left: 35%;
+  top: -20%;
+  border-radius: 0 0 50% 50%;
+}
+
+.newborn_mouth::after {
+  /* width: 40px;
+      height: 40px; */
+  width: 40%;
+  height: 60%;
+  background-color: #f01327;
+  right: 2px;
+  bottom: 1px;
+  border-radius: 50%;
+  -webkit-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+.newborn_mouth__speak {
+  width: 70%;
+  height: 3%;
+  background-color: #c7202f;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  border-radius: 30%;
+}
+
+.newborn_mouth__gum {
+  position: absolute;
+  z-index: 1;
+  width: 60%;
+  height: 15%;
+  top: 0;
+  left: 20%;
+  background-color: #f01327;
+  border-radius: 0 0 2px 2px;
+}
+
+.newborn_nose {
+  width: 9px;
+  height: 11px;
+  background-color: #cb8a33;
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  border-radius: 40%;
+  z-index: 3;
+}
+
+.newborn_nose::before, .newborn_nose::after {
+  content: "";
+  position: absolute;
+  background-color: #654519;
+  width: 7px;
+  height: 10px;
+  top: -5px;
+  z-index: 2;
+  border-radius: 40%;
+}
+
+.newborn_nose::before {
+  left: -5px;
+}
+
+.newborn_nose::after {
+  right: -10px;
+}
+
+.newborn_hair {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  border-bottom: 8px solid #000;
+  border-top: 6px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 5px solid #000;
+  border-radius: 5px 5px 0 0;
 }
