@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Randome numbers</title>
+</head>
+<body>
+  <h2> Заполните массив 10-ю случайными целыми числами. (Подсказка: нужно воспользоваться циклами for или while).</h2>
+
+  <script type="text/javascript">
+    var arr = [];
+    var num;
+    for(var i = 0; i < 10; i++) {
+      num = Math.round( Math.random() * 100 );
+      arr.push(num);
+    }
+
+    document.write(arr);
+    document.write("<br>");
+
+    var arr2 = [];
+    for (i = 0; i < 10; i++) {
+    	arr2[i] = Math.floor(Math.random() * 100) + 1;
+    }
+    document.write(arr2);
+  </script>
+</body>
+</html>
